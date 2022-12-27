@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet" />
+   <link rel="stylesheet" href="./css/components.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>lessons-23</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__flex container">
+         <div class="logo-blok">
+            <img src="./icons/js-icon-png.png" alt="">
+         </div>
+         <nav class="header__nav">
+            <ul class="header__list">
+               <li><a href="#JS">"2"+2=22</a></li>
+               <li><a href="#NN">IF ELSE</a></li>
+               <li><a href="#LV">FOR-WHILE</a></li>
+               <li><a href="#NU">number</a></li>
+               <li><a href="#ST">string</a></li>
+            </ul>
+         </nav>
+         <a href="#" class="blok-btn">
+            <span class="blok-btn__text">Lorem, ipsum.</span>
+         </a>
+      </div>
+   </header>
+   <main>
+      <section id="JS" class="js-blok">
+         <h2 class="h2">"2"+2=22</h2>
+         <div class="js-blok__flex container">
+
+            <div class="js-blok__text">
+               <p class="js-blok__text-p"> <span class="text-span color-red">console.log('35' + - "22");</span> <span
+                     class="text-span__white">Не випадає в помилку, але, здається, запис невірний синтаксично.</span>
+               </p>
+               <p class="js-blok__text-p"> <span class="text-span">console.log('35' * "22");</span> </p>
+               <p class="js-blok__text-p"> <span class="text-span color-red">console.log('558' > 22++);</span> <span
+                     class="text-span__white">Неможлива дія. Порівняння строки та виразу.</span></p>
+               <p class="js-blok__text-p"> <span class="text-span">let usersCounter = 0;<br>
+                     let newUsers = usersCounter++;<br>
+                     console.log(newUsers);
+                  </span> </p>
+               <p class="js-blok__text-p"> <span class="text-span">console.log(!false && 11 || 18 && ! '');</span> </p>
+               <p class="js-blok__text-p"> <span class="text-span color-red">let name = 0;<br>
+                     console.log(name ?? 'без імені');</span> <span class="text-span__white">Працює з невизначеною
+                     змінною, або значенням null.</span></p>
+            </div>
+            <div class="js-blok__video">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/oSO_StIWaXM"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+            </div>
+         </div>
+
+      </section>
+      <section id="NN" class="js-blok-1">
+         <h2 class="h2">IF ELSE</h2>
+         <div class="js-blok__flex container">
+
+            <div class="js-blok__text">
+               <p class="js-blok__text-p"> <span class="text-span color-red">if (1 === "1") {<br>
+                     console.log('Правда!');<br>
+                     } else {<br>
+                     console.log('Брехня!');<br>
+                     }</span> <span class="text-span__white">Не випадає в помилку, але, здається, запис невірний
+                     синтаксично.</span>
+               </p>
+               <p class="js-blok__text-p"> <span class="text-span">if (5 == "5") {<br>
+                     console.log('Правда!');<br>
+                     } else {<br>
+                     console.log('Брехня!');<br>
+                     }</span> </p>
+               <p class="js-blok__text-p"> <span class="text-span color-red">let message = (92 > '11' && 58 < 100)
+                        ? 'Правда!' : 'Брехня!' ;<br>
+                        console.log(message);</span> <span class="text-span__white">Неможлива дія. Порівняння строки та
+                     виразу.</span></p>
+               <p class="js-blok__text-p"> <span class="text-span">if (0) {<br>
+                     console.log('Брехня!');<br>
+                     } else if (" ") {<br>
+                     console.log('Правда!');
+                     }<br>
+                     let newUsers = usersCounter++;<br>
+                     console.log(newUsers);
+                  </span> </p>
+
+            </div>
+            <div class="js-blok__video">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/tFyRhDZgHaU"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+            </div>
+         </div>
+
+      </section>
+      <section id="LV" class="js-blok-2">
+         <h2 class="h2">FOR-WHILE</h2>
+         <div class="js-blok__flex container">
+
+            <div class="js-blok__text">
+               <p class="js-blok__text-p"> <span class="text-span color-red">let num = 8;<br>
+                     while (num) {<br>
+                     console.log(num);<br>
+                     num--;<br>
+                     }</span> <span class="text-span__white">Не вірно. 'num--' Нижче за console.log(num);</span>
+               </p>
+               <p class="js-blok__text-p"> <span class="text-span">for (let num = 0; num < 3; num++) {<br>
+                        console.log('Number: ${num}');
+                        }</span><span class="text-span">let num = 0;<br>
+                     while (num < 3) {<br>
+                        num++;<br>
+                        console.log(`Number: ${num}`);<br>
+                        }</span> </p>
+               <p class="js-blok__text-p"> <span class="text-span">for (let num = 0; num < 2; num++) {<br>
+                        for (let size = 0; size < 3; size++) {<br>
+                           console.log(size);<br>
+
+                           }<br>
+                           }</span><span class="text-span">toMbo: for (let num = 0; num < 2; num++) {<br>
+                        for (let size = 0; size < 3; size++) {<br>
+                           if (size == 2) {<br>
+                           break toMbo;<br>
+                           }<br>
+                           console.log(size);<br>
+                           }<br>
+
+                           }</span> </p>
+
+
+            </div>
+            <div class="js-blok__video">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/QjDzp-yM_To"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+            </div>
+         </div>
+
+      </section>
+      <section id="NU" class="js-blok-3">
+         <h2 class="h2">number</h2>
+         <div class="js-blok__flex container">
+
+            <div class="js-blok__text">
+               <p class="js-blok__text-p"> <span class="text-span">console.log(Math.max(10, 58, 39, -150, 0));</span>
+               </p>
+               <p class="js-blok__text-p"> <span class="text-span">let numOne = Math.floor(58.858);<br>
+                     console.log(numOne.toFixed());</p>
+               <p class="js-blok__text-p"> <span class="text-span">let value = parseFloat("150.58px");<br>
+                     console.log(value);</p>
+               <p class="js-blok__text-p"> <span class="text-span">let numOne = 1.005 + Number.EPSILON;<br>
+                     numOne = Math.round(numOne * 100) / 100;<br>
+                     console.log(numOne);</p>
+               <p class="js-blok__text-p"> <span class="text-span">let value = 58 + "Фрілансер";<br>
+                     if (value !== NaN) {<br>
+                     console.log('Результат виразу NaN');<br>
+                     }</p>
+            </div>
+            <div class="js-blok__video">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/tiHvPGOX5yc"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+            </div>
+         </div>
+
+      </section>
+      <section id="ST" class="js-blok-4">
+         <h2 class="h2">string</h2>
+         <div class="js-blok__flex container">
+
+            <div class="js-blok__text">
+               <p class="js-blok__text-p"> <span class="text-span ">let fis = "Фрілансер";<br>
+                     let text = (`Привіт я ${fis}`);<br>
+                     console.log(text);</span>
+               </p>
+               <p class="js-blok__text-p"> <span class="text-span">let text = 'Фрілансер';<br>
+                     console.log(text.slice(5, 6));</p>
+               <p class="js-blok__text-p"> <span class="text-span color-red">let text = 123 + "456";<br>
+                     console.log(text);</span><span class="text-span__white">Дія неможлива.</span></p>
+               <p class="js-blok__text-p"> <span class="text-span">let text = "Фрілансер";<br>
+                     console.log(text.toUpperCase());</p>
+               <p class="js-blok__text-p"> <span class="text-span">let text = "Фрілансер";<br>
+                     console.log(text.slice(3, 6));</p>
+               <p class="js-blok__text-p"> <span class="text-span color-red">let text = "Фрілансер";<br>
+                     console.log(text.includes('лан', 4));</span><span class="text-span__white">false Немає
+                     співпадінь у четвертому символі.</span></p>
+            </div>
+            <div class="js-blok__video">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/jc5Upe8xIN0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+            </div>
+         </div>
+
+      </section>
+   </main>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
